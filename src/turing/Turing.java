@@ -5,8 +5,6 @@
  */
 package turing;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author alwud
@@ -18,22 +16,19 @@ public class Turing {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
+        Analizador analizer = new Analizador("/home/alwud/Desktop/MATRIZ.txt");
+
         
-        FilesIO aux= new FilesIO("/home/alwud/Desktop/MATRIZ.txt");
-        aux.read();
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+         if (analizer.build()) {
+                analizer.turingSecuence();
+            }
+        try {
+           
+        } catch (Exception e) {
+            System.out.println("Carajooooooooo!!");
+        }
+
     }
-    
-    
-    
+
 }

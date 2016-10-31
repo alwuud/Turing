@@ -28,8 +28,8 @@ public class FilesIO {
         
         try{
         
-            reader= new BufferedReader(new FileReader(ruta));
-            writer= new BufferedWriter(new FileWriter(ruta));
+            reader= new BufferedReader(new FileReader(new File(ruta)));
+            //writer= new BufferedWriter(new FileWriter(new File(ruta)));
             
         
         }catch(Exception e){
@@ -54,7 +54,7 @@ public class FilesIO {
 
             }
         }catch(Exception e){
-            return "";
+            return " jlkjk;j;kj;j;j;j)";
         }
         System.out.println(retorno);
         return retorno;
