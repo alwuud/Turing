@@ -34,11 +34,13 @@ public class Analizador implements Runnable {
         fileManager= new FilesIO(ruta);
         cinta= new char[99];
         
+        
     }
     
     public Analizador(File f){
         fileManager= new FilesIO(f);
         cinta= new char[99];
+        reporteInterno="";
     }
     
     
@@ -139,7 +141,7 @@ public class Analizador implements Runnable {
         }
         cinta= new char[99];
     }
-    
+    String reporteInterno;
     public void turingSecuence(JTextArea txtArea){
         resetMatrixes();
         this.reporte="";
@@ -147,7 +149,7 @@ public class Analizador implements Runnable {
         
         int matrixCounter= matrix.length;
         int cintaIndex=49;
-        String reporteInterno;
+        
         
         int matrixIndex= (int) (Math.random()*matrixCounter);
         int rowIndex=0;
@@ -209,16 +211,14 @@ public class Analizador implements Runnable {
             
             
            
-            this.reporte+= reporteInterno;
+            this.reporte+= reporteInterno+ "\n\n";
             
-            txtArea.setText(reporteInterno);
-            try {
-               this.
-            } catch (InterruptedException ex) {
-                Logger.getLogger(Analizador.class.getName()).log(Level.SEVERE, null, ex);
-            }
+           
+           
             System.out.println("\n\n\n");
         }
+        
+        this.txtArea.setText(reporte);
         
         System.out.println(new String(cinta).trim());
         

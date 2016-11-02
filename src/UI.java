@@ -154,7 +154,7 @@ public class UI extends javax.swing.JFrame {
         System.out.println("VAlor: " +  val);
         //int val= Integer.parseInt(, 2);
         
-       jTextArea1.setText(jTextArea1.getText() + "\n\n Resultado Final" + val );
+       jTextArea1.setText(jTextArea1.getText() + "\n\n Resultado Final: " + val );
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
