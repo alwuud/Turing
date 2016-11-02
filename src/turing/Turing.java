@@ -20,14 +20,7 @@ public class Turing {
         Analizador analizer = new Analizador("/home/alwud/Desktop/MATRIZ.txt");
 
         
-         if (analizer.build()) {
-                analizer.turingSecuence();
-            }
-        try {
-           
-        } catch (Exception e) {
-            System.out.println("Carajooooooooo!!");
-        }
+
 
     }
 

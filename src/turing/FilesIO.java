@@ -24,6 +24,19 @@ public class FilesIO {
     
     
     
+    public FilesIO(File f){
+        
+        try{
+        
+           reader= new BufferedReader(new FileReader(f));
+            
+        
+        }catch(Exception e){
+            
+        }
+        
+    }
+    
     public FilesIO(String ruta){
         
         try{
@@ -56,7 +69,7 @@ public class FilesIO {
         }catch(Exception e){
             return " jlkjk;j;kj;j;j;j)";
         }
-        System.out.println(retorno);
+        System.out.println("Que rayos " + retorno);
         return retorno;
         
     }

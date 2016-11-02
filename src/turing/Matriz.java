@@ -31,6 +31,11 @@ public class Matriz {
         checked= true;
     }
     
+    public void setUnchecked(){
+        checked=false;
+                
+    }
+    
     public boolean isChecked(){
         return checked;
     }
